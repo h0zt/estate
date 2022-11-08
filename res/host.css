@@ -1,0 +1,423 @@
+html,body{
+    margin: 0;
+    color: #212529 !important;
+    background: white;
+}
+*{color: #212529; font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+     'Trebuchet MS', sans-serif !important; }
+h1{
+    color: #69B475;
+    font-weight: 900 !important;
+}
+.logo{
+    font-weight: bolder;
+    font-family: "consolas";
+    padding-left: 0;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    margin: auto;
+    background-color: white;
+    left: 0;
+    right: 0;
+}
+nav .active{
+    border-bottom: 2px solid #69B475;
+    color: #69B475;
+    font-weight: 700;
+}
+nav a{
+    margin-left: 20px;
+    padding-bottom: 16px;
+    margin-right: 0;
+    color: #212529;
+    text-decoration: none;
+}
+nav .menu{
+    width: 60%;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+}
+#LAND a{
+    font-size: 72px;
+    font-weight: 100 !important;
+    -webkit-text-stroke: 2px #69B475;
+    -webkit-text-fill-color: white;
+    text-stroke: 2px white;
+    text-fill-color: #69B475;
+    text-decoration: none;
+ }
+#LAND .text{
+    background-image: linear-gradient(to bottom, #ffffff,
+        white, rgba(255, 255, 255, 0.803),
+        rgba(255, 255, 255, 0.397),#ffffff00); 
+    height: 95vh !important;
+    word-spacing: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#LAND .text p{
+    color:#212529 !important;
+    font-size: 24px !important;
+    width: 50%;
+    float: left;
+    text-align: right;
+    -webkit-text-stroke: 2px #69B475;
+    -webkit-text-fill-color: white;
+    text-stroke: 2px white;
+    text-fill-color: #69B475;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media only screen and (max-width: 720px) { 
+    #LAND .text p{
+        width: 84%;
+        font-size: 18px !important;
+        position: relative;
+        top: -8vh;
+        padding-top: 0 !important;
+    }
+    #LAND a{
+        font-size: 48px !important;
+    }
+    #LAND .text{
+        background-image: linear-gradient(to bottom, #ffffff,
+            white, rgba(255, 255, 255, 0.137),
+            hsla(0, 0%, 100%, 0),hsla(0, 0%, 100%, 0)) !important; 
+        height: 95vh !important;
+        word-spacing: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0 !important;
+    }
+    nav{
+        position: fixed !important;
+        width: 100%;
+    }
+
+}
+.text p#welcome_text{
+    -webkit-text-stroke: 0px #212529 !important;
+    -webkit-text-fill-color:#212529 !important;
+    color: #212529 !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#TABLE{
+    width: 90%;
+    margin: auto;
+    margin-top: 20vh;
+}
+
+#ABOUT.about-farm{
+    min-height: 50vh;
+}
+#TABLE table{
+    width: 100%;
+    table-layout: auto;
+    margin:auto;
+    -o-table-baseline: inherit;
+}
+#TABLE table td{border: solid 1px #212529; margin: 0;}
+#TABLE .about{
+    align-items: left;
+    text-align: left;
+}
+
+#FARM #LAND {margin-bottom: 0vh;}
+#FARM #LAND .text p{margin-top: 0vh}
+#LAND .text u{font-size: 18px; color:#69B475 }
+
+#SECT{
+    height: 30vh;
+    background:white;
+    width: 60%;
+    border-radius: 0;
+    position: relative;
+    top: -15vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%);
+}
+#ABOUT .bot{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 10vh;
+}
+.bot .art,
+.bot .text{
+    width: 30%;
+    min-height: 40vh;
+    font-size: 2.5vw;
+    color:#212529;
+    word-spacing: 10px;
+    text-align: left;
+    justify-content: right;
+}
+.bot .art{text-align: right;}
+.art img{width: 100%;}
+.bot .text{ padding-top: 10vh;}
+#SECT input{
+    height: 30px;
+    width: 25%;
+    padding: 11px;
+    color: #212529;
+    border: none;
+    border-bottom: #69B475 2px solid ;
+}
+#ABOUT{
+    min-height: 90vh;
+    text-align: center;
+    padding-top: 10vh;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 10vh;
+}
+#GALLERY{
+    text-align: center;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+}
+
+#FARM #one{background-image: url("sold.jpg");}
+#FARM #four{background-image: url("maize.jpg");}
+#FARM #two{background: url("ripe.jpg");}
+#FARM #three{background: url("livestock.jpg");}
+#LODGE #one{background-image: url("bed.jpg");}
+#LODGE #four{background-image: url("view.jpg");}
+
+
+#GALLERY .card{
+    width: 50%;
+    min-height: 42vh;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%);
+    margin: 0vh;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-radius: 0px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0vh;
+    margin-top: 10vh;
+}
+#GALLERY .card-text{
+    width: 50%;
+    min-height: 42vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    border-radius: 0px;
+    text-align: center;
+    position: relative;
+}
+@media only screen and (max-width: 720px) {
+    #GALLERY{width: 96%; margin:auto !important}
+    #GALLERY .card{width: 96%; margin: auto !important;}
+    #GALLERY .card-text{width: 100%;min-height: 24vh;}
+    footer{margin-top: 5vh !important;}
+    #ABOUT .bot.home {padding-top: 20vh !important;}
+    #SECT {top: -35vh !important}
+    #ABOUT.about-farm {padding-top: 10vh !important;}
+}
+
+#ABOUT button{
+    position: relative;
+    left: 27%;
+    border: none;
+    background: none;
+    color:#69B475;
+    padding: 5px;
+}
+#ABOUT button:hover{
+    border: solid #69B475 2px;
+}
+
+.card-text h1{
+    color: #69B475;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 42px;
+}
+.card-text p{
+    font-size: 20px;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+footer{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%);
+    width: 100%;
+    margin: auto;
+    margin-top: 15vh;
+}
+footer a{color: #69B475}
+footer h1{
+    padding: 4vh;
+    font-size: 1.8em; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700 !important;}
+footer center{
+    margin-top: 0;
+    padding-bottom: 5vh;
+    color:#212529 !important;
+}
+footer center#center{
+    color: #212529 !important;
+}
+
+#LAND{
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 720px) {
+  
+    #LAND{
+        height: 85vh;
+        width: 100%;
+        position: relative;
+        background:url("land-mobo.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #LAND .text{
+        background-image: linear-gradient(to bottom, #212529,
+         #212529e1,#212529cb,#212529cb,#21252900); 
+        word-spacing: 7px;
+        width: 100%;
+    }
+    ._rev#GALLERY,._rev#GALLERY{
+        flex-direction:column-reverse;
+    }
+    #LAND{
+        height: 70vh;
+        width: 100%;
+        position: relative;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #LAND .text{font-size: 12vw;}
+    #SECT{
+        top: -15vh;
+        width: 80%;
+        flex-direction: column;
+        height: 70vh;
+        justify-content: flex-start;
+    }
+    #SECT input{
+        margin-top: 40px;
+        width: 80%;
+    }
+    #SECT #name{margin-top: 11vh;}
+    #ABOUT{
+        padding-top: 0vh;
+    }
+    #ABOUT .bot{
+        flex-direction: column;
+        justify-content: right;
+    }
+    #ABOUT .bot.home{ padding-top: 60vh;}
+    #ABOUT button{top: 45vh;}
+    .bot .art,
+    .bot .text{ 
+        width: 100%;
+        min-height: 50vh;
+        font-size: 10vw;
+    }
+    .bot .art {
+        min-height: 20vh;
+    }
+    #ABOUT{width: 90%; margin: auto;}
+}
+@media only screen and (width: 375px) {
+    #SECT{ height: 60vh;}
+    #ABOUT{padding-top: 37vh;}
+}
+u{color: #69B475;}
+@media only screen and (width: 600px) {
+    #LAND{
+        height: 50vh;
+    }
+}
+
+
+/**START NEW NAVIGATION***/
+.hamburger{
+    display: none;}
+@media only screen and (max-width: 720px) { 
+    .hamburger{
+        display: block;
+        padding: 2.5vh;
+        cursor: pointer;
+        padding-left: -20vh;
+        padding-bottom: 1vh;
+    }
+    .logo{padding-left: 0;
+    }
+    .line{
+        width: 20px;
+        margin: 6px;
+        background:#212529;
+        height: 2px;
+    }
+    .line._1{width: 30px;}
+    nav{
+        position: relative;
+        margin: auto;
+        z-index: 2;
+    }
+  
+   .nav-links{
+       display: flex;
+       position:fixed;
+       left: 0;
+       right: 0;
+       top: 5vh;
+       background:white;
+       color: #212529;
+       height: 80vh;
+        flex-direction: column;
+        justify-content:start;
+       width: 100%;
+        clip-path: circle(0px at 90% -10%);   
+        -webkit-clip-path:circle(0px at 90% -10%);
+        transition: all 1s ease-out;
+        z-index: 2;
+        align-items: center;
+    }
+    .nav-links.open{
+        clip-path: circle(70vh at 90% -10%);   
+        -webkit-clip-path:circle(70vh at 90% -10%);
+    }
+   .nav-links a{
+       width: max-content;
+       margin-top: 50px;
+       padding: 10px;
+       width:max-content;
+       color: #212529;
+       text-align: right;
+
+   }
+   .nav-links a.active{
+       color: #69B475 !important;
+   }
+/****END NAVIGATION*/
+}
